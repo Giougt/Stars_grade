@@ -3,16 +3,6 @@ const stars2 = document.getElementById("stars2").querySelectorAll(".la-star");
 const stars3 = document.getElementById("stars3").querySelectorAll(".la-star");
 const stars4 = document.getElementById("stars4").querySelectorAll(".la-star");
 
-const grade1Input = document.getElementById("grade1");
-const grade2Input = document.getElementById("grade2");
-const grade3Input = document.getElementById("grade3");
-const grade4Input = document.getElementById("grade4");
-
-const noteValue1 = grade1Input.value;
-const noteValue2 = grade1Input.value;
-const noteValue3 = grade1Input.value;
-const noteValue4 = grade1Input.value;
-
     for(star of stars1){
         star.addEventListener("click", function(){
             resetStars();
@@ -93,13 +83,13 @@ const noteValue4 = grade1Input.value;
     for(star of stars3){
         star.addEventListener("click", function(){
             resetStars();
-            this.style.color = "white";
+            this.style.color = "red";
             this.classList.add("las");
             this.classList.remove("lar");
             let previousStar = this.previousElementSibling;
 
             while(previousStar){
-                previousStar.style.color = "white";
+                previousStar.style.color = "red";
                 previousStar.classList.add("las");
                 previousStar.classList.remove("lar");
                 previousStar = previousStar.previousElementSibling;
