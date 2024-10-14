@@ -8,19 +8,16 @@ Object.assign(document.body.style,{
 const star_style = document.getElementsByClassName("lar la-star");
 for (let i = 0; i < star_style.length; i++) {
     Object.assign(star_style[i].style, {
-        color: "red",
+        color: "#f5e609",
         fontSize: "100px"
     });
 }
 
-
-
-const stars1 = document.getElementById("stars1").querySelectorAll(".la-star");
 const stars2 = document.getElementById("stars2").querySelectorAll(".la-star");
 const stars3 = document.getElementById("stars3").querySelectorAll(".la-star");
 const stars4 = document.getElementById("stars4").querySelectorAll(".la-star");
 
-    for(star of stars1){
+    for(star of stars2){
         star.addEventListener("click", function(){
             resetStars();
             this.style.color = "white";
@@ -172,3 +169,18 @@ const stars4 = document.getElementById("stars4").querySelectorAll(".la-star");
             }
         }
     }
+
+const input_result = document.createElement("input"); 
+document.body.appendChild(input_result);
+
+Object.assign(input_result.style,{
+    marginLeft: "50px"
+})
+
+
+function value(){
+    stars10.addEventListener("click", function(){
+        let a = document.getElementById("stars10").getAttribute("data-value");
+        input_result.value= a; 
+    });
+}
