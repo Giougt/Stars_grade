@@ -1,3 +1,20 @@
+Object.assign(document.body.style,{
+    height: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
+})
+
+const star_style = document.getElementsByClassName("lar la-star");
+for (let i = 0; i < star_style.length; i++) {
+    Object.assign(star_style[i].style, {
+        color: "red",
+        fontSize: "100px"
+    });
+}
+
+
+
 const stars1 = document.getElementById("stars1").querySelectorAll(".la-star");
 const stars2 = document.getElementById("stars2").querySelectorAll(".la-star");
 const stars3 = document.getElementById("stars3").querySelectorAll(".la-star");
