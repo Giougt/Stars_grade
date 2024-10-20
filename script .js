@@ -52,6 +52,8 @@ Object.assign(input_result.style,{
 
 // part script 
 
+// array for star 
+
 const ele = [star10,star20,star30,star40,star50];
 
 // void reset 
@@ -63,36 +65,40 @@ function reset_star() {
 };
 
 // void each star 
-    star10.addEventListener("click", function(){
-        reset_star(); 
-        star10.style.color = "#e530ea";
-        
-    });
 
-    star20.addEventListener("click", function(){
-        reset_star(); 
-        for (let index = 0; index < ele.length-3; index++) {
-            ele[index].style.color = "#e530ea";
-        }
-    });
+function color_all_star(size,color) {
+    reset_star();
+    for (let index = 0; index < size; index++) {
+        ele[index].style.color = color;
+    }
+}
 
-    star30.addEventListener("click", function(){
-        reset_star(); 
-        for (let index = 0; index < ele.length-2; index++) {
-            ele[index].style.color = "#e530ea";
-        }
-    });
+// call function all star 
 
-    star40.addEventListener("click", function(){
-        reset_star(); 
-        for (let index = 0; index < ele.length-1; index++) {
-            ele[index].style.color = "#e530ea";
-        }
-    });
+star10.addEventListener("click", function(){
+    if (star10.style.color === "rgb(229, 48, 234)"){
+        color_all_star(ele.length-4,"#777771");
+    }else{
+    color_all_star(ele.length-4,"#e530ea");
+    }
+});
 
-    star50.addEventListener("click", function(){
-        reset_star(); 
-        for (let index = 0; index < ele.length; index++) {
-            ele[index].style.color = "#e530ea";
-        }
-    });
+star20.addEventListener("click", function(){
+    color_all_star(ele.length-3,"#e530ea");
+});
+
+star30.addEventListener("click", function(){
+    color_all_star(ele.length-2,"#e530ea");
+});
+
+star40.addEventListener("click", function(){
+    color_all_star(ele.length-1,"#e530ea");
+});
+
+star50.addEventListener("click", function() {
+    color_all_star(ele.length,"#e530ea");
+});
+
+if (star10.style.color === "#e530ea"){
+    color_all_star(ele.length-4,"#e530ea");
+}; 
