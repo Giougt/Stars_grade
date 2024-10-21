@@ -1,3 +1,48 @@
+//create element 
+const star_first = document.createElement("i"); 
+const star_second = document.createElement("i"); 
+const star_third = document.createElement("i"); 
+const star_four = document.createElement("i"); 
+const star_five = document.createElement("i"); 
+const block1 = document.createElement("div"); 
+
+block1.className = "stars"; 
+
+//star 1
+star_first.className = "lar la-star"; 
+star_first.id = "stars1";
+star_first.setAttribute("data-value", "1");
+
+//star 2
+star_second.className = "lar la-star"; 
+star_second.id = "stars2";
+star_second.setAttribute("data-value","2"); 
+
+//star 3
+star_third.className = "lar la-star"; 
+star_third.id = "stars3";
+star_third.setAttribute("data-value","3"); 
+
+//star 4
+star_four.className = "lar la-star"; 
+star_four.id = "stars4";
+star_four.setAttribute("data-value","4"); 
+
+//star 5
+star_five.className = "lar la-star"; 
+star_five.id = "stars5";
+star_five.setAttribute("data-value","5"); 
+
+//append in div 
+block1.appendChild(star_first);
+block1.appendChild(star_second);
+block1.appendChild(star_third);
+block1.appendChild(star_four);
+block1.appendChild(star_five);
+
+//append in body
+document.body.appendChild(block1);
+
 // css part 
 Object.assign(document.body.style,{
     height: "100vh",
