@@ -61,6 +61,7 @@ const ele = [star10,star20,star30,star40,star50];
 function reset_star() {
     for (let index = 0; index < ele.length; index++) {
         ele[index].style.color = "#777771";
+        ele[index].classList.remove("las");
     }
 };
 
@@ -70,6 +71,7 @@ function color_all_star(size,color) {
     reset_star();
     for (let index = 0; index < size; index++) {
         ele[index].style.color = color;
+        ele[index].classList.add("las");
     }
 }
 
@@ -78,6 +80,7 @@ function color_all_star(size,color) {
 star10.addEventListener("click", function(){
     if (star10.style.color === "rgb(229, 48, 234)"){
         color_all_star(ele.length-4,"#777771");
+        star10.classList.remove("las");
     }else{
     color_all_star(ele.length-4,"#e530ea");
     }
