@@ -1,11 +1,17 @@
-//create element 
+//create element body
 const star_first = document.createElement("i"); 
 const star_second = document.createElement("i"); 
 const star_third = document.createElement("i"); 
 const star_four = document.createElement("i"); 
 const star_five = document.createElement("i"); 
 const block1 = document.createElement("div"); 
+
+// create  element head 
 const link = document.createElement("link"); 
+const metaCharset = document.createElement("meta");
+const metaViewport = document.createElement("meta");
+const title = document.createElement("title");
+
 
 block1.className = "stars"; 
 
@@ -37,7 +43,22 @@ star_five.setAttribute("data-value","5");
 //link 
 link.rel = "stylesheet"; 
 link.href = "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"; 
+
+//metaCharset
+metaCharset.setAttribute("charset", "UTF-8");
+
+// metaViewport
+metaViewport.name = "viewport";
+metaViewport.content = "width=device-width, initial-scale=1.0";
+
+//title
+title.textContent = "Page test";
+
+//append in head 
 document.head.appendChild(link);
+document.head.appendChild(metaCharset);
+document.head.appendChild(metaViewport);
+document.head.appendChild(title);
 
 //append in div 
 block1.appendChild(star_first);
