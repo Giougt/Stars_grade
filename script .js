@@ -5,6 +5,7 @@ const star_third = document.createElement("i");
 const star_four = document.createElement("i"); 
 const star_five = document.createElement("i"); 
 const block1 = document.createElement("div"); 
+const link = document.createElement("link"); 
 
 block1.className = "stars"; 
 
@@ -32,6 +33,11 @@ star_four.setAttribute("data-value","4");
 star_five.className = "lar la-star"; 
 star_five.id = "stars5";
 star_five.setAttribute("data-value","5"); 
+
+//link 
+link.rel = "stylesheet"; 
+link.href = "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"; 
+document.head.appendChild(link);
 
 //append in div 
 block1.appendChild(star_first);
