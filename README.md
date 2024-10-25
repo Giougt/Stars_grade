@@ -18,3 +18,4 @@ Project Goal
 The goal of this project is to create a simple star rating system where users can assign a visual rating based on the number of colored stars, while allowing the rating to be reset and changed intuitively.
 
 powered by <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" width="50" />
+<img src="/img/demo.png" alt="demo" width="700" />
