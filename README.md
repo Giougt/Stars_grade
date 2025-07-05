@@ -1,3 +1,7 @@
+[![Version](https://img.shields.io/badge/version-1.0.0-yellow.svg)](https://shields.io)
+[![Language](https://img.shields.io/badge/language-javascript-yellow.svg)](https://shields.io)
+[![Contributors](https://img.shields.io/badge/contributors-1-yellow.svg)](https://shields.io)
+
 This project implements an interactive star rating system that allows the user to select a rating by clicking on stars. The system visually displays the rating level by coloring the stars according to the selected item.
 
 Key Features
@@ -17,5 +21,4 @@ The color and state of the stars change dynamically upon user interaction, provi
 Project Goal
 The goal of this project is to create a simple star rating system where users can assign a visual rating based on the number of colored stars, while allowing the rating to be reset and changed intuitively.
 
-powered by <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" width="50" />
 <img src="/img/demo.png" alt="demo" width="700" />
